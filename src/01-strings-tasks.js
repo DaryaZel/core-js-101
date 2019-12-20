@@ -19,7 +19,7 @@
  *   '',  'bb'  => 'bb'
  */
 function concatenateStrings(value1, value2) {
-return `${value1}${value2}`
+  return `${value1}${value2}`;
 }
 
 
@@ -35,7 +35,7 @@ return `${value1}${value2}`
  *   ''      => 0
  */
 function getStringLength(value) {
-return value.length
+  return value.length;
 }
 
 /**
@@ -52,7 +52,7 @@ return value.length
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(firstName, lastName) {
-return `Hello, ${firstName} ${lastName}!`
+  return `Hello, ${firstName} ${lastName}!`;
 }
 
 /**
@@ -66,7 +66,7 @@ return `Hello, ${firstName} ${lastName}!`
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
 function extractNameFromTemplate(value) {
-return `${value.split(' ')[1]} ${value.split(' ')[2]}`
+  return `${value.split(' ')[1]} ${value.split(' ')[2]}`;
 }
 
 
@@ -81,7 +81,7 @@ return `${value.split(' ')[1]} ${value.split(' ')[2]}`
  *   'cat'       => 'c'
  */
 function getFirstChar(value) {
-return value.charAt(0)
+  return value.charAt(0);
 }
 
 /**
@@ -96,7 +96,7 @@ return value.charAt(0)
  *   '\tHello, World! ' => 'Hello, World!'
  */
 function removeLeadingAndTrailingWhitespaces(value) {
-  return value.trim()
+  return value.trim();
 }
 
 /**
@@ -111,7 +111,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(value, count) {
-return value.repeat(count)
+  return value.repeat(count);
 }
 
 /**
@@ -127,7 +127,7 @@ return value.repeat(count)
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-return str.replace(value,'')
+  return str.replace(value, '');
 }
 
 /**
@@ -142,7 +142,7 @@ return str.replace(value,'')
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-return str.slice(1, str.length-1)
+  return str.slice(1, str.length - 1);
 }
 
 
@@ -157,7 +157,7 @@ return str.slice(1, str.length-1)
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
 function convertToUpperCase(str) {
-return str.toUpperCase()
+  return str.toUpperCase();
 }
 
 /**
@@ -176,8 +176,8 @@ return str.toUpperCase()
  *   'info@gmail.com' => ['info@gmail.com']
  */
 function extractEmails(str) {
-let array=str.split(';');
-return array
+  const array = str.split(';');
+  return array;
 }
 
 /**
